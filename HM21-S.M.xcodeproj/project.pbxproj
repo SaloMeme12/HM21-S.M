@@ -13,7 +13,11 @@
 		FE2EFCF128A510BC005D88AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE2EFCEF28A510BC005D88AB /* Main.storyboard */; };
 		FE2EFCF328A510BE005D88AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE2EFCF228A510BE005D88AB /* Assets.xcassets */; };
 		FE2EFCF628A510BE005D88AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE2EFCF428A510BE005D88AB /* LaunchScreen.storyboard */; };
-		FE2EFCFE28A519B0005D88AB /* New.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2EFCFD28A519B0005D88AB /* New.swift */; };
+		FE2EFD0028A51D7C005D88AB /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2EFCFF28A51D7C005D88AB /* TableViewController.swift */; };
+		FE2EFD0228A531B3005D88AB /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2EFD0128A531B3005D88AB /* Model.swift */; };
+		FE2EFD2628A58BE0005D88AB /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2EFD2528A58BE0005D88AB /* APIService.swift */; };
+		FE2EFD2828A590E7005D88AB /* FlagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2EFD2728A590E7005D88AB /* FlagViewController.swift */; };
+		FE2EFD2A28A593A4005D88AB /* Extension  .swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2EFD2928A593A4005D88AB /* Extension  .swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +29,11 @@
 		FE2EFCF228A510BE005D88AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE2EFCF528A510BE005D88AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE2EFCF728A510BE005D88AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FE2EFCFD28A519B0005D88AB /* New.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = New.swift; sourceTree = "<group>"; };
+		FE2EFCFF28A51D7C005D88AB /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		FE2EFD0128A531B3005D88AB /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		FE2EFD2528A58BE0005D88AB /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		FE2EFD2728A590E7005D88AB /* FlagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagViewController.swift; sourceTree = "<group>"; };
+		FE2EFD2928A593A4005D88AB /* Extension  .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension  .swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +66,28 @@
 		FE2EFCE828A510BC005D88AB /* HM21-S.M */ = {
 			isa = PBXGroup;
 			children = (
+				FE2EFD2B28A59881005D88AB /* SupportingFiles */,
+				FE2EFD2728A590E7005D88AB /* FlagViewController.swift */,
+				FE2EFD2528A58BE0005D88AB /* APIService.swift */,
+				FE2EFD0128A531B3005D88AB /* Model.swift */,
+				FE2EFCFF28A51D7C005D88AB /* TableViewController.swift */,
+				FE2EFCED28A510BC005D88AB /* ViewController.swift */,
+				FE2EFCEF28A510BC005D88AB /* Main.storyboard */,
+			);
+			path = "HM21-S.M";
+			sourceTree = "<group>";
+		};
+		FE2EFD2B28A59881005D88AB /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				FE2EFCE928A510BC005D88AB /* AppDelegate.swift */,
 				FE2EFCEB28A510BC005D88AB /* SceneDelegate.swift */,
-				FE2EFCED28A510BC005D88AB /* ViewController.swift */,
-				FE2EFCFD28A519B0005D88AB /* New.swift */,
-				FE2EFCEF28A510BC005D88AB /* Main.storyboard */,
 				FE2EFCF228A510BE005D88AB /* Assets.xcassets */,
 				FE2EFCF428A510BE005D88AB /* LaunchScreen.storyboard */,
 				FE2EFCF728A510BE005D88AB /* Info.plist */,
+				FE2EFD2928A593A4005D88AB /* Extension  .swift */,
 			);
-			path = "HM21-S.M";
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,8 +162,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE2EFCEE28A510BC005D88AB /* ViewController.swift in Sources */,
+				FE2EFD2A28A593A4005D88AB /* Extension  .swift in Sources */,
 				FE2EFCEA28A510BC005D88AB /* AppDelegate.swift in Sources */,
-				FE2EFCFE28A519B0005D88AB /* New.swift in Sources */,
+				FE2EFD0028A51D7C005D88AB /* TableViewController.swift in Sources */,
+				FE2EFD0228A531B3005D88AB /* Model.swift in Sources */,
+				FE2EFD2828A590E7005D88AB /* FlagViewController.swift in Sources */,
+				FE2EFD2628A58BE0005D88AB /* APIService.swift in Sources */,
 				FE2EFCEC28A510BC005D88AB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,7 +317,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 68JHUUXS7A;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "HM21-S.M/Info.plist";
+				INFOPLIST_FILE = "HM21-S.M/SupportingFiles/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -321,7 +345,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 68JHUUXS7A;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "HM21-S.M/Info.plist";
+				INFOPLIST_FILE = "HM21-S.M/SupportingFiles/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
